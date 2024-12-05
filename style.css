@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #fcfcfc;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  form {
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+  }
+  
+  #delete-users {
+    background: red;
+    color: black;
+  }
+
+  #clients-table {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  tbody {
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #settingsSection {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#settingsSection h2 {
+    margin-top: 0;
+}
+
+.fundo {
+    background-image: url('logoRafaelScremim.jpg');
+    width: 200px;
+    height: 200px;
+  }

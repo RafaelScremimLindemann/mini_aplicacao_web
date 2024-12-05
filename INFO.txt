@@ -1,0 +1,12 @@
+Olá caro avaliador.
+
+Descompacte o arquivo mini_aplicacao_web. 
+Posterior a isso de um duplo clique no arquivo index.html,
+quando ele abrir em um dos seus navegadores, insira o login: admin e senha: 1234.
+
+Com o login aceito, terá todas as opçoes exigidas pelo Teste proposto:
+Cadastro de Cliente; Cadastro de Endereços; Cadastro de Usuários; Exportar Banco de Dados.
+
+Quando você acessar a tela Cadastro de usuário e importar um banco pré-populado, já deixei um arquivo pronto,
+chamado teste.json.
+

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/alasql/dist/alasql.min.js"></script>
+</head>
+<body>
+  <!-- Tela de Login -->
+  <div id="login-screen" class="screen">
+    <h1>Login</h1>
+    <form id="login-form">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" required>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+      <button type="submit">Entrar</button>
+    </form> 
+    <p id="login-error" class="error"></p>
+    <div>
+    <img src="logoRafaelScremim.jpg" alt="logo">
+    </div>
+  </div>
+   <!-- Menu Principal -->
+   <div id="main-menu" class="screen hidden" style="display: none;">
+    <h1>Menu Principal</h1>
+    <button id="btn-client">Cadastro de Clientes</button>
+    <button id="btn-address">Cadastro de Endereços</button>
+    <button id="btn-users">Cadastro de Usuários</button>
+    <button id="export-btn">Exportar Banco de Dados</button>
+    <button id="logout-btn">Sair</button>
+   </div>
+    <!-- Tela de Cliente -->
+    <div id="client-screen" class="screen hidden">
+      <h1>Cadastro de Clientes</h1>
+      <div>
+          <input type="text" id="client-name" placeholder="Nome do Cliente">
+          <input type="text" id="client-cpf" placeholder="CPF">
+      </div>
+      <div>
+          <input type="text" id="client-birth" placeholder="Data de nascimento">
+          <input type="text" id="client-phone" placeholder="Telefone">
+      </div>
+      <div>
+          <input type="text" id="client-cel" placeholder="Celular">
+      </div>
+      <button id="save-client">Salvar</button>
+      <button id="back-btn">Voltar</button>
+      <button id="list-client">Listar</button>
+  
+  <div>
+      <table id="clients-table">
+          <thead>
+              <tr>
+                  <th>ID</th>
+                  <th>Nome</th>
+                  <th>CPF</th>
+                  <th>Data de Nascimento</th>
+                  <th>Telefone</th>
+                  <th>Celular</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Os clientes serão inseridos aqui -->
+          </tbody>
+      </table>
+  </div>
+  </div>
+  
+    <!-- Tela de Endereço -->
+    <div id="adress-screen" class="screen hidden">
+      <h1>Cadastro de Endereço</h1>
+      <label for="searchClient">Pesquisar Cliente:</label>
+      <input type="text" id="searchClient" placeholder="Digite o nome do cliente">
+      <select id="clientSelect" required>
+      <!-- Clientes serão carregados aqui via JavaScript -->
+      </select>
+      <div>
+      <input type="text" id="adress-cep" placeholder="CEP">
+      <input type="text" id="adress-street" placeholder="Rua">
+      </div>
+      <div>
+      <input type="text" id="adress-neighborhood" placeholder="Bairro">
+      <input type="text" id="adress-city" placeholder="Cidade">
+      </div>
+      <div>
+      <input type="text" id="adress-state" placeholder="Estado">
+      <input type="text" id="adress-country" placeholder="Pais">
+      </div>
+      <label for="isPrimary">Endereço Principal:</label>
+      <input type="checkbox" id="isPrimary" name="isPrimary">
+      <button id="save-adress">Salvar</button>
+      <button id="back-adress">Voltar</button>
+  </div>
+    <!-- Tela Usuário -->
+    <div id="users-screen" class="screen hidden">
+      <h1>Cadastro de Usuários</h1>
+      <div>
+      <input type="text" id="user-name" placeholder="Usuário">
+      <input type="password" id="pass-word" placeholder="Senha">
+      <input type="file" id="uploadDb" accept=".json">
+      <button id="processDb">Carregar Banco</button>
+      </div>
+      <button id="save-user">Salvar</button>
+      <button id="back-user">Voltar</button>
+      <button id="delete-users">Apagar todos Usuários</button>
+    </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
